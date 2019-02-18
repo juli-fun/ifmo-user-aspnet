@@ -1,0 +1,10 @@
+/Users/juli-fun/ifmo-user-aspnet/obj/Debug/ifmo-user-aspnet.csprojAssemblyReference.cache
+/Users/juli-fun/ifmo-user-aspnet/obj/Debug/ifmo-user-aspnet.csproj.CoreCompileInputs.cache
+/Users/juli-fun/ifmo-user-aspnet/bin/ifmo-user-aspnet.dll
+/Users/juli-fun/ifmo-user-aspnet/bin/ifmo-user-aspnet.pdb
+/Users/juli-fun/ifmo-user-aspnet/bin/Newtonsoft.Json.dll
+/Users/juli-fun/ifmo-user-aspnet/bin/Newtonsoft.Json.pdb
+/Users/juli-fun/ifmo-user-aspnet/bin/Newtonsoft.Json.xml
+/Users/juli-fun/ifmo-user-aspnet/obj/Debug/ifmo-user-aspnet.csproj.CopyComplete
+/Users/juli-fun/ifmo-user-aspnet/obj/Debug/ifmo-user-aspnet.dll
+/Users/juli-fun/ifmo-user-aspnet/obj/Debug/ifmo-user-aspnet.pdb

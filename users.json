@@ -1,0 +1,32 @@
+[
+  {
+    "email": "berezhkov@ifmo.ru",
+    "login": "berezhkov",
+    "fname": "Бережков",
+    "name": "Андрей",
+    "lname": "Вячеславович",
+    "auth_key": "B_x26T!kK=",
+    "created_at": "2019-02-16T19:51:16.531477+03:00",
+    "updated_at": "2019-02-16T19:51:16.535498+03:00",
+    "birth_date": "1970-01-01T00:00:00",
+    "is_blocked": false,
+    "is_authorized": true,
+    "is_registered": true,
+    "password_md5": "1FE5B5DD843A437D14B64CEF34CDF3CA"
+  },
+  {
+    "email": "juli@ifmo.ru",
+    "login": "juli",
+    "fname": "Аникиенко",
+    "name": "Юлия",
+    "lname": "Владимировна",
+    "auth_key": "",
+    "created_at": "2019-02-16T19:51:16.574911+03:00",
+    "updated_at": "2019-02-16T19:51:16.574912+03:00",
+    "birth_date": "1970-01-01T00:00:00",
+    "is_blocked": false,
+    "is_authorized": false,
+    "is_registered": false,
+    "password_md5": "97B5061419A5C8256A88C0EDA61FEF2E"
+  }
+]

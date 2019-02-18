@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
+    <meta charset="utf-8">
 	<title>Default</title>
 </head>
 <body>
