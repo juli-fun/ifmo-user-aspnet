@@ -29,6 +29,8 @@ namespace ifmouseraspnet {
 		
 		protected System.Web.UI.WebControls.Button _reg_submit;
 		
-		protected System.Web.UI.WebControls.Table TableUsers;
+		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		
+		protected System.Web.UI.WebControls.GridView GridViewUsers;
 	}
 }

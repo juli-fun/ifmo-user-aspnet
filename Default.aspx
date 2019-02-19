@@ -53,13 +53,19 @@
             </table>  
     </form>
     <h3>Список пользователей</h3>
-    <asp:Table id="TableUsers" 
-        GridLines="Both" 
-        HorizontalAlign="Left" 
-        Font-Names="Verdana" 
-        Font-Size="8pt" 
-        CellPadding="15" 
-        CellSpacing="0" 
-        Runat="server"/>
+    <form id="form1" runat="server">
+    <div>
+        <asp:GridView ID="GridViewUsers" runat="server" AutoGenerateColumns = "false">
+            <Columns>
+                <asp:BoundField DataField="Email" HeaderText="Email" />
+                <asp:BoundField DataField="Login" HeaderText="Login" />
+                <asp:BoundField DataField="Fname" HeaderText="Фамилия" />
+                <asp:BoundField DataField="Name" HeaderText="Имя" />
+                <asp:BoundField DataField="Lname" HeaderText="Отчество" />
+                <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" ButtonType="Button" />
+            </Columns>
+        </asp:GridView>  
+    </div>
+    </form>      
 </body>
 </html>

@@ -73,5 +73,20 @@
     "is_authorized": false,
     "is_registered": false,
     "password_md5": "098F6BCD4621D373CADE4E832627B4F6"
+  },
+  {
+    "email": "test@test.ru",
+    "login": "test3",
+    "fname": "Test3",
+    "name": "Test3",
+    "lname": "Test3",
+    "auth_key": "",
+    "created_at": "2019-02-19T21:20:25.646821+01:00",
+    "updated_at": "2019-02-19T21:20:25.646841+01:00",
+    "birth_date": "1970-01-01T00:00:00",
+    "is_blocked": false,
+    "is_authorized": false,
+    "is_registered": false,
+    "password_md5": "6DB44D58AEF199F6E38FEFE873318B02"
   }
 ]
