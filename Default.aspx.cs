@@ -77,9 +77,23 @@ public partial class Default : System.Web.UI.Page
             }
         }
 
-        public void button1Clicked(object sender, EventArgs args)
+        public void reg_submit_Clicked(object sender, EventArgs args)
         {
-            button1.Text = Users[1].Get_Short_Initials();
+            Users.Add(new User(_email.Text,
+            _login.Text, _password.Text, _fname.Text, _name.Text, _lname.Text));
+
+            // Сохраняем юзеров в файл
+            var json = JsonConvert.SerializeObject(Users, Formatting.Indented);
+            Console.WriteLine(json);
+
+            using (StreamWriter sw = new StreamWriter("users.json", false, System.Text.Encoding.Default))
+            {
+                sw.WriteLine(json);
+                sw.Close();
+            }
+
+            // Перезагрузим страницу
+            Response.Redirect(Request.RawUrl);
         }
     }
 }

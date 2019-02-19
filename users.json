@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "email": "berezhkov@ifmo.ru",
     "login": "berezhkov",
@@ -6,8 +6,8 @@
     "name": "Андрей",
     "lname": "Вячеславович",
     "auth_key": "B_x26T!kK=",
-    "created_at": "2019-02-16T19:51:16.531477+03:00",
-    "updated_at": "2019-02-16T19:51:16.535498+03:00",
+    "created_at": "2019-02-16T17:51:16.531477+01:00",
+    "updated_at": "2019-02-16T17:51:16.535498+01:00",
     "birth_date": "1970-01-01T00:00:00",
     "is_blocked": false,
     "is_authorized": true,
@@ -21,12 +21,42 @@
     "name": "Юлия",
     "lname": "Владимировна",
     "auth_key": "",
-    "created_at": "2019-02-16T19:51:16.574911+03:00",
-    "updated_at": "2019-02-16T19:51:16.574912+03:00",
+    "created_at": "2019-02-16T17:51:16.574911+01:00",
+    "updated_at": "2019-02-16T17:51:16.574912+01:00",
     "birth_date": "1970-01-01T00:00:00",
     "is_blocked": false,
     "is_authorized": false,
     "is_registered": false,
     "password_md5": "97B5061419A5C8256A88C0EDA61FEF2E"
+  },
+  {
+    "email": "test@test.ru",
+    "login": "test",
+    "fname": "Test",
+    "name": "User",
+    "lname": "Testovich",
+    "auth_key": "",
+    "created_at": "2019-02-19T20:24:25.471027+01:00",
+    "updated_at": "2019-02-19T20:24:25.47106+01:00",
+    "birth_date": "1970-01-01T00:00:00",
+    "is_blocked": false,
+    "is_authorized": false,
+    "is_registered": false,
+    "password_md5": "098F6BCD4621D373CADE4E832627B4F6"
+  },
+  {
+    "email": "ramilkh@gmail.com",
+    "login": "ramilkh",
+    "fname": "Рамиль",
+    "name": "Рамиль",
+    "lname": "Хантимиров",
+    "auth_key": "",
+    "created_at": "2019-02-19T20:24:39.484824+01:00",
+    "updated_at": "2019-02-19T20:24:39.484853+01:00",
+    "birth_date": "1970-01-01T00:00:00",
+    "is_blocked": false,
+    "is_authorized": false,
+    "is_registered": false,
+    "password_md5": "72D5361D63CDBC8B11772AEF0D538F93"
   }
 ]

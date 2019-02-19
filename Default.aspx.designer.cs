@@ -13,9 +13,21 @@ namespace ifmouseraspnet {
 	
 	public partial class Default {
 		
-		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		protected System.Web.UI.HtmlControls.HtmlForm regUser;
 		
-		protected System.Web.UI.WebControls.Button button1;
+		protected System.Web.UI.WebControls.TextBox _fname;
+		
+		protected System.Web.UI.WebControls.TextBox _name;
+		
+		protected System.Web.UI.WebControls.TextBox _lname;
+		
+		protected System.Web.UI.WebControls.TextBox _email;
+		
+		protected System.Web.UI.WebControls.TextBox _login;
+		
+		protected System.Web.UI.WebControls.TextBox _password;
+		
+		protected System.Web.UI.WebControls.Button _reg_submit;
 		
 		protected System.Web.UI.WebControls.Table TableUsers;
 	}
