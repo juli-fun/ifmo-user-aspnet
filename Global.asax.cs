@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Web;
+using System.IO;
 using System.Security.Cryptography; // для md5
 using System.Text; // для md5
+using System.Collections.Generic; // для List
 using Newtonsoft.Json; // для чтения и сохранения списка пользователей в/из JSON
 
 // для восстановления пароля
@@ -13,6 +15,36 @@ namespace ifmouseraspnet
     {
         protected void Application_Start()
         {
+        }
+    }
+
+    // Класс для работы с базой в виде JSON-файла
+    public static class User_db
+    {
+        public static List<User> Read(string _filename)
+        {
+            // Читаем список пользователей из файла
+            string json_fromfile;
+
+            using (StreamReader sr = new StreamReader(_filename))
+            {
+                json_fromfile = sr.ReadToEnd();
+            }
+
+            return JsonConvert.DeserializeObject<List<User>>(json_fromfile);
+        }
+
+        public static void Write(List<User> _users, string _filename)
+        {
+            // Сохраняем юзеров в файл
+            var json = JsonConvert.SerializeObject(_users, Formatting.Indented);
+            Console.WriteLine(json);
+
+            using (StreamWriter sw = new StreamWriter(_filename, false, System.Text.Encoding.Default))
+            {
+                sw.WriteLine(json);
+                sw.Close();
+            }
         }
     }
 

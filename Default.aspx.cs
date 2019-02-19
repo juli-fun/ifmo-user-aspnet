@@ -16,14 +16,7 @@ public partial class Default : System.Web.UI.Page
         protected void Page_Load(object sender, EventArgs e)
         {
             // Читаем список пользователей из файла
-            string json_fromfile;
-
-            using (StreamReader sr = new StreamReader("users.json"))
-            {
-                json_fromfile = sr.ReadToEnd();
-            }
-
-            Users = JsonConvert.DeserializeObject<List<User>>(json_fromfile);
+            Users = User_db.Read("users.json");
 
             var th = new TableHeaderRow();
 
@@ -83,14 +76,7 @@ public partial class Default : System.Web.UI.Page
             _login.Text, _password.Text, _fname.Text, _name.Text, _lname.Text));
 
             // Сохраняем юзеров в файл
-            var json = JsonConvert.SerializeObject(Users, Formatting.Indented);
-            Console.WriteLine(json);
-
-            using (StreamWriter sw = new StreamWriter("users.json", false, System.Text.Encoding.Default))
-            {
-                sw.WriteLine(json);
-                sw.Close();
-            }
+            User_db.Write(Users, "users.json");
 
             // Перезагрузим страницу
             Response.Redirect(Request.RawUrl);
