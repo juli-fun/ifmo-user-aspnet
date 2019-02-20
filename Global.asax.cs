@@ -160,6 +160,11 @@ namespace ifmouseraspnet
             updated_at = DateTime.Now;
         }
 
+        public static string Generate_Password ()
+        {
+            return RandomPassword.Generate(10);
+        }
+
         // Служебная функция для создания md5-хэша
         private string MD5_encode(string _password)
         {
@@ -198,7 +203,7 @@ namespace ifmouseraspnet
         {
             if (is_authorized)
             {
-                auth_key = RandomPassword.Generate(10);
+                auth_key = Generate_Password();
                 return auth_key;
             }
             else { return ""; }
@@ -237,7 +242,7 @@ namespace ifmouseraspnet
         public int Recover_Passwd()
         {
             // Генерируем новый пароль
-            var password = RandomPassword.Generate(10);
+            var password = Generate_Password();
             password_md5 = MD5_encode(password);
 
             // Отправляем его на почту (надо только указать работающий релей)
