@@ -6,9 +6,44 @@
 	<title>Default</title>
 </head>
 <body>
-    <h3>Регистрация/создание пользователя</h3>
+    <h3>Авторизация пользователя</h3>
+    <form id="authUser" runat="server">
+        <table class="auto-style1">  
+                <tr>  
+                    <td>Логин:</td>  
+                    <td>  
+                        <asp:TextBox ID="_login_auth" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Пароль:</td>  
+                    <td>  
+                        <asp:TextBox ID="_password_auth" runat="server" TextMode="Password"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Статус:</td>  
+                    <td>  
+                        <asp:Label ID="is_authorized" runat="server" /> 
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>  
+                        <asp:Button ID="_reg_auth" runat="server" Text="Авторизоваться" OnClick="reg_auth_Clicked" />  
+                    </td>  
+                </tr>  
+            </table>  
+        </form>
+    <h3>Регистрация/создание/редактирование пользователя</h3>
+    <p>Для редактирования пользователя введите его логин</p>
     <form id="regUser" runat="server">
         <table class="auto-style1">  
+                <tr>  
+                    <td>Логин:</td>  
+                    <td>  
+                        <asp:TextBox ID="_login" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
                 <tr>  
                     <td>Фамилия:</td>  
                     <td>  
@@ -34,12 +69,6 @@
                     </td>  
                 </tr> 
                 <tr>  
-                    <td>Логин:</td>  
-                    <td>  
-                        <asp:TextBox ID="_login" runat="server"></asp:TextBox>  
-                    </td>  
-                </tr>  
-                <tr>  
                     <td>Пароль:</td>  
                     <td>  
                         <asp:TextBox ID="_password" runat="server" TextMode="Password"></asp:TextBox>  
@@ -47,7 +76,7 @@
                 </tr>  
                 <tr>  
                     <td>  
-                        <asp:Button ID="_reg_submit" runat="server" Text="Зарегистрировать" OnClick="reg_submit_Clicked" />  
+                        <asp:Button ID="_reg_submit" runat="server" Text="Сохранить" OnClick="reg_submit_Clicked" />  
                     </td>  
                 </tr>  
             </table>  
@@ -62,7 +91,6 @@
                 <asp:BoundField DataField="Fname" HeaderText="Фамилия" />
                 <asp:BoundField DataField="Name" HeaderText="Имя" />
                 <asp:BoundField DataField="Lname" HeaderText="Отчество" />
-                <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" ButtonType="Button" />
             </Columns>
         </asp:GridView>  
     </div>

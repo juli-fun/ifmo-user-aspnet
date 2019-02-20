@@ -115,6 +115,13 @@ namespace ifmouseraspnet
             set {; }
         }
 
+        [JsonIgnore]
+        public bool Is_Authorized
+        {
+            get { return is_authorized; }
+            set {; }
+        }
+
         public User()
         {
 
