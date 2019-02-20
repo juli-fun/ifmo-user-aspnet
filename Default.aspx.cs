@@ -25,21 +25,20 @@ public partial class Default : System.Web.UI.Page
 
         public void reg_submit_Clicked(object sender, EventArgs args)
         {
-            var index = Users.Find(x => x.Login == _login.Text);
+            int index = -1;
+            index = Users.FindIndex(x => x.Login == _login.Text);
 
-            Label isAuth = this.FindControl("is_authorized") as Label;
-            if (index.Login == _login.Text)
+            if (index >= 0 && Users[index].Login == _login.Text)
             {
-                index.Email = _email.Text;
-                index.Fname = _fname.Text;
-                index.Name = _name.Text;
-                index.Lname = _lname.Text;
+                Users[index].Email = _email.Text;
+                Users[index].Fname = _fname.Text;
+                Users[index].Name = _name.Text;
+                Users[index].Lname = _lname.Text;
             }
             else
             {
                 Users.Add(new User(_email.Text, _login.Text, _password.Text,
                 _fname.Text, _name.Text, _lname.Text));
-
             }
 
             // Сохраняем юзеров в файл
@@ -51,15 +50,25 @@ public partial class Default : System.Web.UI.Page
 
         public void reg_auth_Clicked(object sender, EventArgs args)
         {
-            var index = Users.Find(x => x.Login == _login_auth.Text);
-            index.Auth_Passwd(_password_auth.Text);
-
+            int index = -1;
             Label isAuth = this.FindControl("is_authorized") as Label;
 
-            if (index.Is_Authorized)
+            index = Users.FindIndex(x => x.Login == _login_auth.Text);
+
+            if (index >= 0)
             {
-                isAuth.Text = "Авторизован!";
-            } else
+                Users[index].Auth_Passwd(_password_auth.Text);
+
+                if (Users[index].Is_Authorized)
+                {
+                    isAuth.Text = "Авторизован!";
+                }
+                else
+                {
+                    isAuth.Text = "Ошибка авторизации!";
+                }
+            }
+            else
             {
                 isAuth.Text = "Ошибка авторизации!";
             }

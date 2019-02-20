@@ -186,7 +186,7 @@ namespace ifmouseraspnet
         // Авторизация по паролю
         public int Auth_Passwd(string _password)
         {
-            if (MD5_encode(_password) == password_md5)
+            if (MD5_encode(_password) == password_md5 && password_md5 != "")
             {
                 is_authorized = true;
                 Console.WriteLine("Authorized by password!");
