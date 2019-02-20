@@ -7,8 +7,10 @@ namespace ifmouseraspnet.Tests
     public class Test
     {
         [Test]
-        public void TestCase()
+        public void GeneratedPasswordLengthIsTenSymbols()
         {
+            var _password = RandomPassword.Generate(10);
+            Assert.IsTrue(_password.Length == 10);
         }
     }
 }

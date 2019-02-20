@@ -1,0 +1,14 @@
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/ifmo-user-aspnet.Tests.dll
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/ifmo-user-aspnet.Tests.pdb
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/ifmo-user-aspnet.dll
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/nunit.framework.dll
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/Newtonsoft.Json.dll
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/ifmo-user-aspnet.pdb
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/nunit.framework.xml
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/Newtonsoft.Json.pdb
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/bin/Debug/Newtonsoft.Json.xml
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/obj/Debug/ifmo-user-aspnet.Tests.csprojAssemblyReference.cache
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/obj/Debug/ifmo-user-aspnet.Tests.csproj.CoreCompileInputs.cache
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/obj/Debug/ifmo-user-aspnet.Tests.csproj.CopyComplete
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/obj/Debug/ifmo-user-aspnet.Tests.dll
+/Users/juli-fun/ifmo-user-aspnet/ifmo-user-aspnet.Tests/obj/Debug/ifmo-user-aspnet.Tests.pdb
